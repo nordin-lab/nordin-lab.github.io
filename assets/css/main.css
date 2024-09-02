@@ -3242,3 +3242,181 @@ input, select, textarea {
     font-size: 22px;
     color: #777;
 }
+
+
+/* Tabs */
+.tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: #49bf9d;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Section styling */
+#main > section {
+    margin-bottom: 4em;
+    padding-bottom: 2em;
+    border-bottom: 2px solid #efefef;
+}
+
+#main > section:last-child {
+    border-bottom: none;
+}
+
+/* Portfolio section */
+#portfolio > section {
+    margin-bottom: 3em;
+}
+
+#portfolio h3 {
+    color: #49bf9d;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Classes section */
+#classes {
+    background-color: rgba(73, 191, 157, 0.1);
+    padding: 2em;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+
+#classes h2 {
+    color: #49bf9d;
+}
+
+#classes ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+#classes ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 736px) {
+    .tab-button {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    #portfolio .work-item {
+        margin-bottom: 2em;
+    }
+}
+
+/* Improve readability */
+p, ul, ol {
+    line-height: 1.6;
+}
+
+/* Add some hover effects to work items */
+.work-item {
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+}
+
+.work-item h3 {
+    transition: color 0.3s ease;
+}
+
+.work-item:hover h3 {
+    color: #49bf9d;
+}
+
+/* Language toggle */
+#language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#language-toggle button {
+    background-color: #49bf9d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#language-toggle button.active {
+    background-color: #3a9d82;
+}
+
+/* Language-specific content */
+.en, .es {
+    display: none;
+}
+
+html[lang="en"] .en {
+    display: block;
+}
+
+html[lang="es"] .es {
+    display: block;
+}
+
+/* Ensure inline elements also follow the language rules */
+span.en, span.es {
+    display: inline;
+}
+
+html[lang="en"] span.en {
+    display: inline;
+}
+
+html[lang="es"] span.es {
+    display: inline;
+}
+
+/* Specific rule for spans inside buttons */
+button .en, button .es {
+    display: none !important;
+}
+
+html[lang="en"] button .en {
+    display: inline !important;
+}
+
+html[lang="es"] button .es {
+    display: inline !important;
+}

@@ -114,3 +114,41 @@
 			});
 
 })(jQuery);
+
+function openTab(evt, tabName) {
+    var i, tabContent, tabButtons;
+
+    // Hide all tab content
+    tabContent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+    }
+
+    // Remove "active" class from all tab buttons
+    tabButtons = document.getElementsByClassName("tab-button");
+    for (i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+    }
+
+    // Show the current tab and add "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+function toggleLanguage(lang) {
+    document.documentElement.lang = lang;
+    localStorage.setItem('language', lang);
+    
+    var buttons = document.querySelectorAll('#language-toggle button');
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+    document.querySelector('#language-toggle button[onclick="toggleLanguage(\'' + lang + '\')"]').classList.add('active');
+}
+
+function setInitialLanguage() {
+    var lang = localStorage.getItem('language') || 'es';
+    toggleLanguage(lang);
+}
+
+document.addEventListener('DOMContentLoaded', setInitialLanguage);

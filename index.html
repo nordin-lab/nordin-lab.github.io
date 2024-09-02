@@ -1,160 +1,212 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="es">
 	<head>
-		<title>Nordin's Portfolio</title>
+		<title>Porfolio de Nordin | Nordin's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
 	</head>
 	<body class="is-preload">
+		<!-- Language Toggle -->
+		<div id="language-toggle">
+			<button onclick="toggleLanguage('es')" class="active">Español</button>
+			<button onclick="toggleLanguage('en')">English</button>
+		</div>
 
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/selfie.png" alt="" /></a>
-					<h1>Hey there, <strong>I am Nordin.</strong>
-					<br>Welcome to my page!
-					</a></h1>
-				</div>
-				<!-- HTML -->
-				<div class="aurelius-quote">
-					"Think of yourself as dead. You have lived your life. Now, take what's left and live it properly." <br>
-					<span>- Marcus Aurelius</span>
-				</div>
-			</header>
+		<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="images/selfie.png" alt="" /></a>
+				<h1 class="es">Hola, <strong>soy Nordin.</strong><br />Bienvenido!</h1>
+				<h1 class="en">Hey there, <strong>I am Nordin.</strong><br />Welcome!</h1>
+			</div>
+			<div class="aurelius-quote">
+				<p>"Think of yourself as dead. You have lived your life. Now, take what's left and live it properly."</p>
+				<span>- Marcus Aurelius</span>
+			</div>
+		</header>
 
 		<!-- Main -->
-			<div id="main">
+		<div id="main">
+			<!-- About -->
+			<section id="about">
+				<header class="major">
+					<h2 class="es">Sobre mí</h2>
+					<h2 class="en">About me</h2>
+				</header>
+				<p class="es">Graduado en Informática con un fuerte entusiasmo por la tecnología y los negocios. Mi formación académica me ha proporcionado una sólida comprensión de cómo la tecnología complementa el mundo empresarial. Estoy profundamente motivado para aportar valor. Reconocido por mi dedicación, amabilidad y confiabilidad.</p>
+				<p class="en">Computer Science graduate with a strong enthusiasm for technology and business. My academic background has equipped me with a solid understanding of how technology complements the business world. I am deeply motivated to add value wherever I go, and I am recognized for my dedication, kindness, and dependability.</p>
+			</section>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>About me<br />
-							</h2>
-						</header>
-						<p>Computer Science graduated with a strong enthusiasm for technology and business. My academic background has equipped me with a solid understanding of how technology complements the business world. I am deeply motivated to add value wherever I go, and I am recognized for my dedication, kindness, and dependability. I look forward to applying these qualities in my professional journey.</p>
-						<!-- <ul class="actions">
-							<li><a href="#skills" class="button">Learn More</a></li>
-						</ul> -->
-					</section>
-
-					<section id="professional-summary">
-						<header class="major">
-							<h2>Professional Summary</h2>
-						</header>
-						<p>
-							Experienced <strong>Fullstack Developer</strong> with a strong background in both <strong>backend</strong> and <strong>frontend development</strong>. Skilled in <strong>Java</strong>, <strong>Spring</strong>, <strong>Spring Boot</strong> for backend development, and <strong>HTML</strong>, <strong>CSS</strong>, <strong>TypeScript</strong>, and <strong>Angular</strong> for frontend development. Proficient in managing databases with <strong>MySQL</strong> and handling database migrations using <strong>Flyway</strong>. Adept at using various tools and platforms, including <strong>Git</strong>, <strong>IntelliJ IDEA</strong>, <strong>Visual Studio</strong>, <strong>Postman</strong>, and <strong>OpenShift OKD</strong> for deployments. Demonstrated expertise in <strong>Agile</strong> and <strong>Scrum</strong> methodologies for efficient project management. Involved in machine learning projects with experience in data cleaning, oversampling and undersampling techniques, and using libraries such as <strong>Pandas</strong>, <strong>Numpy</strong>, <strong>PyTorch</strong>, and <strong>Scikit-learn</strong>.
-						</p>
-					</section>
-					
-
-				<!-- Skills -->
-				<section id="skills">
-					<header class="major">
-						<h2>Skills</h2>
-					</header>
-					<ul>
-						<li>Software Engineering: Java, Spring, Spring Boot, Python, Matlab.</li>
-						<li>Web Development: HTML, CSS, JavaScript, TypeScript, Angular.</li>
-						<li>Databases: MySQL, SQL Server, Oracle, PL/SQL, Flyway.</li>
-						<li>Tools & Platforms: Git, IntelliJ IDEA, Visual Studio, Postman, Linux & Shell Scripting, OpenShift OKD.</li>
-						<li>Project Management: Agile, Scrum, Jira, Confluence.</li>
-						<li>Machine Learning: Large Language Models (LLM), Pandas, Numpy, PyTorch, Scikit-learn, Data Cleaning, Oversampling & Undersampling Techniques.</li>
-					</ul>
-				</section>
-				
-
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://aclanthology.org/2023.semeval-1.191/" class="image fit thumb no-lightbox" target="_blank">
-								<img src="images/fulls/task4.png" alt="Task 4. Proceedings." /></a>
-								<h3>Deep Learning Techniques for Detecting Human Values in Arguments</h3>
-								<p>I authored a scientific paper on the automatic detection of human values in arguments, leveraging advanced pre-trained models like BERT and RoBERTa. This work was accepted and published in the <a href="https://semeval.github.io/SemEval2023/" target="_blank">'17th International Workshop on Semantic Evaluation'</a>
-								on <a href="https://touche.webis.de/semeval23/touche23-web/index.html#submission" target="_blank">'Task 4. ValueEval: Identification of Human Values behind Arguments'</a>.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/nordin-lab/ProyectoRC" class="image fit thumb no-lightbox" target="_blank"><img src="images/fulls/sudoku.jpg" alt="Sudoku" /></a>
-								<h3>Sudoku solver using Prolog</h3>
-								<p>Project for Knowledge Representation subject at <a href="https://www.uhu.es/etsi/" target="_blank">University of Huelva</a>.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>More projects incoming...</h3>
-								<p></p>
-							</article>
-						</div>
-						<!-- <ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul> -->
-					</section>
-
-				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>Feel free to contact!</p>
-						<div class="row">
-							<!-- <div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div> -->
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										21800 Huelva,<br />
-										Spain
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										+34 610 44 18 90
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="mailto:nordinmoguer@gmail.com">nordinmoguer@gmail.com</a>									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-
+			<!-- Tabs -->
+			<div class="tabs">
+				<button class="tab-button active" onclick="openTab(event, 'portfolio')">
+					<span class="es">Curriculum </span>
+					<span class="en">Portfolio</span>
+				</button>
+				<button class="tab-button" onclick="openTab(event, 'classes')">
+					<span class="es">Clases Particulares</span>
+					<span class="en">Private Tutoring</span>
+				</button>
 			</div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://github.com/nordin-lab" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/nordin-el-balima-cordero" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+			<!-- Portfolio Tab -->
+			<div id="portfolio" class="tab-content active">
+				<section>
+					<h3 class="es">Resumen Profesional</h3>
+					<h3 class="en">Professional Summary</h3>
+					<p class="es">Desarrollador Fullstack experimentado con sólidos conocimientos tanto en desarrollo backend como frontend. Competente en Java, Spring, Spring Boot para backend, y HTML, CSS, TypeScript y Angular para frontend. Experto en gestión de bases de datos con MySQL y migraciones usando Flyway. Hábil en el uso de diversas herramientas y plataformas, incluyendo Git, IntelliJ IDEA, Visual Studio, Postman y OpenShift OKD para despliegues. Demostrada experiencia en metodologías Agile y Scrum para una gestión eficiente de proyectos. Involucrado en proyectos de machine learning con experiencia en limpieza de datos, técnicas de oversampling y undersampling, y uso de librerías como Pandas, Numpy, PyTorch y Scikit-learn.</p>
+					<p class="en">Experienced Fullstack Developer with a strong background in both backend and frontend development. Skilled in Java, Spring, Spring Boot for backend development, and HTML, CSS, TypeScript, and Angular for frontend development. Proficient in managing databases with MySQL and handling database migrations using Flyway. Adept at using various tools and platforms, including Git, IntelliJ IDEA, Visual Studio, Postman, and OpenShift OKD for deployments. Demonstrated expertise in Agile and Scrum methodologies for efficient project management. Involved in machine learning projects with experience in data cleaning, oversampling and undersampling techniques, and using libraries such as Pandas, Numpy, PyTorch, and Scikit-learn.</p>
+				</section>
+
+				<section>
+					<h3 class="es">Habilidades</h3>
+					<h3 class="en">Skills</h3>
+					<ul>
+						<li class="es"><strong>Ingeniería de Software:</strong> Java, Spring, Spring Boot, Python, Matlab.</li>
+						<li class="en"><strong>Software Engineering:</strong> Java, Spring, Spring Boot, Python, Matlab.</li>
+						<li class="es"><strong>Desarrollo Web:</strong> HTML, CSS, JavaScript, TypeScript, Angular.</li>
+						<li class="en"><strong>Web Development:</strong> HTML, CSS, JavaScript, TypeScript, Angular.</li>
+						<li class="es"><strong>Bases de Datos:</strong> MySQL, SQL Server, Oracle, PL/SQL, Flyway.</li>
+						<li class="en"><strong>Databases:</strong> MySQL, SQL Server, Oracle, PL/SQL, Flyway.</li>
+						<li class="es"><strong>Herramientas y Plataformas:</strong> Git, IntelliJ IDEA, Visual Studio, Postman, Linux y Shell Scripting, OpenShift OKD.</li>
+						<li class="en"><strong>Tools & Platforms:</strong> Git, IntelliJ IDEA, Visual Studio, Postman, Linux & Shell Scripting, OpenShift OKD.</li>
+						<li class="es"><strong>Gestión de Proyectos:</strong> Agile, Scrum, Jira, Confluence.</li>
+						<li class="en"><strong>Project Management:</strong> Agile, Scrum, Jira, Confluence.</li>
+						<li class="es"><strong>Machine Learning:</strong> Modelos de Lenguaje Grande (LLM), Pandas, Numpy, PyTorch, Scikit-learn, Limpieza de Datos, Técnicas de Oversampling y Undersampling.</li>
+						<li class="en"><strong>Machine Learning:</strong> Large Language Models (LLM), Pandas, Numpy, PyTorch, Scikit-learn, Data Cleaning, Oversampling & Undersampling Techniques.</li>
 					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+				</section>
+
+				<section>
+					<h3 class="es">Trabajos Recientes</h3>
+					<h3 class="en">Recent Work</h3>
+					<div class="row">
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://aclanthology.org/2023.semeval-1.191/" class="image fit thumb no-lightbox" target="_blank">
+							<img src="images/fulls/task4.png" alt="Task 4. Proceedings." /></a>
+							<h3 class="es">Técnicas de Deep Learning para Detectar Valores Humanos en Argumentos</h3>
+							<h3 class="en">Deep Learning Techniques for Detecting Human Values in Arguments</h3>
+							<p class="es">Escribí un artículo científico sobre la detección automática de valores humanos en argumentos, utilizando modelos pre-entrenados avanzados como BERT y RoBERTa. Este trabajo fue aceptado y publicado en el <a href="https://semeval.github.io/SemEval2023/" target="_blank">'17º Taller Internacional de Evaluación Semántica'</a> en la <a href="https://touche.webis.de/semeval23/touche23-web/index.html#submission" target="_blank">'Tarea 4. ValueEval: Identificación de Valores Humanos detrás de los Argumentos'</a>.</p>
+							<p class="en">I authored a scientific paper on the automatic detection of human values in arguments, leveraging advanced pre-trained models like BERT and RoBERTa. This work was accepted and published in the <a href="https://semeval.github.io/SemEval2023/" target="_blank">'17th International Workshop on Semantic Evaluation'</a> on <a href="https://touche.webis.de/semeval23/touche23-web/index.html#submission" target="_blank">'Task 4. ValueEval: Identification of Human Values behind Arguments'</a>.</p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://github.com/nordin-lab/ProyectoRC" class="image fit thumb no-lightbox" target="_blank"><img src="images/fulls/sudoku.jpg" alt="Sudoku" /></a>
+							<h3 class="es">Solucionador de Sudoku usando Prolog</h3>
+							<h3 class="en">Sudoku solver using Prolog</h3>
+							<p class="es">Proyecto para la asignatura de Representación del Conocimiento en la <a href="https://www.uhu.es/etsi/" target="_blank">Universidad de Huelva</a>.</p>
+							<p class="en">Project for Knowledge Representation subject at <a href="https://www.uhu.es/etsi/" target="_blank">University of Huelva</a>.</p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+							<h3 class="es">Más proyectos en camino...</h3>
+							<h3 class="en">More projects incoming...</h3>
+						</article>
+					</div>
+				</section>
+			</div>
+
+			<!-- Classes Tab -->
+			<div id="classes" class="tab-content">
+				<h2 class="es">Información</h2>
+				<h2 class="en">Private Tutoring Services</h2>
+				<p class="es">Con más de 6 años de experiencia como profesor de academia privada, ofrezco clases completas en una amplia gama de asignaturas:</p>
+				<p class="en">With over 6 years of experience as a private academy professor, I offer comprehensive tutoring services in a wide range of subjects:</p>
+				<ul>
+					<li class="es">Matemáticas</li>
+					<li class="en">Mathematics</li>
+					<li class="es">Física</li>
+					<li class="en">Physics</li>
+					<li class="es">Química</li>
+					<li class="en">Chemistry</li>
+					<li class="es">Informática y Tecnología</li>
+					<li class="en">Computer Science and Technology</li>
+					<li class="es">Inglés</li>
+					<li class="en">English Language</li>
+					<li class="es">Otras asignaturas relacionadas con las ciencias</li>
+					<li class="en">Other Science-related subjects</li>
+					<li class="es">Humanidades y Literatura</li>
+					<li class="en">Humanities and Literature</li>
+				</ul>
+				<h3 class="es">Mi Enfoque de Enseñanza</h3>
+				<h3 class="en">My Teaching Approach</h3>
+				<p class="es">A lo largo de los años, he perfeccionado y comprobado la eficacia de mis métodos de enseñanza, que incluyen:</p>
+				<p class="en">Over the years, I've refined and proven the effectiveness of my teaching methods, which include:</p>
+				<ul>
+					<li class="es">Diseñar planes de aprendizaje personalizados adaptados a las necesidades y estilo de aprendizaje de cada estudiante</li>
+					<li class="en">Tailoring personalized learning plans to each student's unique needs and learning style</li>
+					<li class="es">Emplear lecciones interactivas y atractivas para hacer que los conceptos complejos sean accesibles e interesantes</li>
+					<li class="en">Employing interactive and engaging lessons to make complex concepts accessible and interesting</li>
+					<li class="es">Realizar evaluaciones regulares del progreso para garantizar una mejora continua</li>
+					<li class="en">Conducting regular progress assessments to ensure continuous improvement</li>
+					<li class="es">Proporcionar una preparación completa para exámenes, incluyendo estrategias para pruebas estandarizadas</li>
+					<li class="en">Providing comprehensive exam preparation, including strategies for standardized tests</li>
+					<li class="es">Fomentar el pensamiento crítico y las habilidades de resolución de problemas aplicables a diversas asignaturas</li>
+					<li class="en">Fostering critical thinking and problem-solving skills applicable across various subjects</li>
+				</ul>
+				<h3 class="es">Opciones de Aprendizaje Flexibles</h3>
+				<h3 class="en">Flexible Learning Options</h3>
+				<p class="es">Para adaptarme a tus preferencias y horario, ofrezco sesiones de tutoría:</p>
+				<p class="en">To accommodate your preferences and schedule, I offer tutoring sessions:</p>
+				<ul>
+					<li class="es">En tu domicilio, proporcionando un entorno de aprendizaje cómodo y familiar</li>
+					<li class="en">At your home, providing a comfortable and familiar learning environment</li>
+					<li class="es">En mi espacio de enseñanza personal, equipado con los recursos necesarios</li>
+					<li class="en">At my personal teaching space, equipped with necessary resources</li>
+				</ul>
+				<p class="es">Si estás interesado en reservar una sesión o en obtener más información sobre mis servicios, <a href="#contact">contáctame</a>. ¡Trabajemos juntos para desbloquear todo tu potencial académico!</p>
+				<p class="en">If you're interested in booking a session or learning more about my tutoring services, <a href="#contact">contact me</a>. Let's work together to unlock your full academic potential!</p>
+			</div>
+
+			<!-- Contact -->
+			<section id="contact">
+				<h2 class="es">Contacto</h2>
+				<h2 class="en">Get In Touch</h2>
+				<div class="row">
+					<div class="col-4 col-12-small">
+						<ul class="labeled-icons">
+							<li>
+								<h3 class="icon solid fa-home"><span class="label">Dirección</span></h3>
+								18009 Granada,<br />
+								España
+							</li>
+							<li>
+								<h3 class="icon solid fa-mobile-alt"><span class="label">Teléfono</span></h3>
+								+34 610 44 18 90
+							</li>
+							<li>
+								<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+								<a href="mailto:nordinmoguer@gmail.com">nordinmoguer@gmail.com</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</footer>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://github.com/nordin-lab" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+					<li><a href="https://www.linkedin.com/in/nordin-el-balima-cordero" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/language.js"></script>
 
 	</body>
 </html>
