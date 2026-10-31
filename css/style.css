@@ -180,10 +180,13 @@ th { background: #f3f3f3; }
 @media (max-width: 600px) {
   body { font-size: 16px; }
 
-  .top-inner { flex-direction: column; align-items: flex-start; gap: 4px; padding-top: 8px; padding-bottom: 8px; }
-  .top nav { gap: 18px; }
+  .top-inner { flex-wrap: wrap; gap: 4px 10px; padding-top: 6px; padding-bottom: 6px; }
+  .brand { font-size: 17px; }
+  .brand img { width: 30px; height: 30px; }
+  .top nav { gap: 14px; margin-left: auto; }
+  .top nav a { font-size: 15px; padding: 6px 0; }
 
-  section { scroll-margin-top: 90px; }
+  section { scroll-margin-top: 70px; }
 
   .intro { flex-direction: column; align-items: center; text-align: center; }
   .intro p:not(.botones) { text-align: left; }
