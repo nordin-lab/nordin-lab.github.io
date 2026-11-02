@@ -52,10 +52,12 @@ a { color: #1b2a4a; }
 .top nav a {
   text-decoration: none;
   font-size: 15px;
-  color: #444;
+  color: #2b8f96;
+  font-weight: 600;
 }
 
 .top nav a:hover { color: #1b2a4a; text-decoration: underline; }
+.top nav a:nth-child(2) { color: #1b2a4a; }
 
 /* Secciones */
 section { padding-top: 24px; padding-bottom: 8px; scroll-margin-top: 60px; }
@@ -77,6 +79,7 @@ p { margin: 0 0 12px; }
 .hero-logo { display: block; width: 100%; max-width: 440px; height: auto; margin: 0 auto 8px; }
 .hero h1 { font-size: 28px; }
 .hero .botones { justify-content: center; }
+.hero .precio { margin: 0 0 8px; font-size: 26px; font-weight: 700; color: #2b8f96; }
 
 /* Columnas de clases */
 .cols { display: flex; gap: 16px; margin: 8px 0 12px; }
@@ -193,6 +196,7 @@ th { background: #f3f3f3; }
   .cols { flex-direction: column; gap: 12px; }
   .cierre { margin-left: -6px; margin-right: -6px; }
   .hero h1 { font-size: 23px; }
+  .hero .precio { font-size: 22px; }
   .hero-logo { max-width: 320px; }
   .foto { width: 130px; }
   h1 { font-size: 22px; }
